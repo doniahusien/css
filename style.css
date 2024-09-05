@@ -1,3 +1,48 @@
-h1{
+/*h1{
+    color:red;
+}
+h5{
     color: red;
 }
+group selectors*/
+h1,h5,p,#secTwo{
+    color: blue;
+}
+/*global selector*/
+*{
+    color:rgb(254, 254, 254);
+}
+/*0 0.1 0.2 1*/
+body{
+    background-color:blueviolet;
+    opacity: 1;
+    background-color: rgba(100, 200, 120, 1);
+}
+h1{
+    background-color: coral;
+}
+body{
+    background-image: url('ed.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+/*
+section{
+    width: 850px;
+    height: 800px;
+    background-image: url("code.jpg");
+}*/
+p{
+    width: 250px;
+    border-color: rgb(37, 193, 43);
+    border-width: 5px;
+    border-style:dashed;
+}
+
+#secTwo{
+    width: 700px;
+    height: 900px;
+    border: 5px solid dotted;
+}
+
+
