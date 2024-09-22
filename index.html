@@ -1,62 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s;
+            margin: 5px;
+        }
+        div:hover{
+            width: 300px;
+        }
+
+        #linear{
+            transition-timing-function: linear;
+        }
+        #ease{
+            transition-timing-function: ease;
+        }
+        #easein{
+            transition-timing-function: ease-in;
+        }
+
+
+
+        #tran{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 2s, height 2s , transform 2s;
+            /*transition-property: width;
+            transition-duration: 2s;
+            */
+        }
+        #tran:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: aqua;
-    }
-
-    .static {
-        position: static;
-        border: 2px solid red;
-    }
-
-    .rel {
-        width: 250px;
-        border: 2px solid blue;
-        /*position: relative;*/
-        top: 700px;
-        bottom: 0%;
-        right: 10%;
-        left: 250px;
-    }
-
-    .relative {
-        position: relative;
-        width: 350px;
-        height: 300px;
-        border: 2px solid;
-    }
-
-    .abs {
-        position: absolute;
-        left: 90%;
-        top: 50%;
-        border: 5px solid saddlebrown;
-        width: 70px;
-        height: 80px;
-    }
-    .fixed{
-        position: fixed;
-    left: 70px;
-    top: 25px;
-    }
-    
-</style>
-
 <body>
-    <p class="fixed">fixed position</p>
-    <p class="static">Position static</p>
-    <p class="rel">Position Relative</p>
-    <div class="relative">
-        <div class="abs">Hii</div>
-    </div>
-    
-</body>
+    <div id="firstDiv"></div>
+    <div id="linear">linear</div>
+    <div id="ease">ease</div>
+    <div id="easein"></div>
+    <div id="tran"></div>
 
+</body>
 </html>
